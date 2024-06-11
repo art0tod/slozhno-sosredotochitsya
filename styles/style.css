@@ -1,5 +1,96 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  padding: 10px;
+  margin: 0;
+  background-color: var(--bg-color, #fff1f7);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--font, 'IBM Plex Mono'), sans-serif;
+  color: var(--text-color);
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  block-size: max(100dvh, 668px);
+  gap: 50px;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--text-color);
+}
+
+.decorated-zone::before {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.decorated-zone::after {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  width: 100%;
+  color: var(--text-color);
+  text-transform: lowercase;
+  font-size: 18px;
+  border: 1px solid transparent;
+  font-family: inherit;
+  line-height: 120%;
+  padding: 0 12.5px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid currentColor;
+}
+
+.header__title {
+  color: var(--header_title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 82.5%;
+  margin: auto;
+}
+
+.header__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  align-self: flex-start;
+  margin: 0;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--title_decor-color);
+}
+
+.footer {
+  position: relative;
 }
