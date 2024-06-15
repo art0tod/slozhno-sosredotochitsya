@@ -6,12 +6,3 @@
   --bg-image: url('/images/cover-image-dark.png');
   --title_decor-color: var(--bg-color);
 }
-
-:root.theme-dark {
-  --bg-color: #000028;
-  --text-color: #f1b2ce;
-  --header_title-color: #db00ff;
-  --accent-color: #ff0070;
-  --bg-image: url('/images/cover-image-dark.png');
-  --title_decor-color: var(--bg-color);
-}
