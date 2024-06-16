@@ -1,17 +1,17 @@
 :root {
-  --bg-color: #fff1f7;
-  --text-color: #353430;
-  --header_title-color: #ffc2e6;
-  --accent-color: #ff8dcb;
-  --accent-color_rec: transparent;
-  --bg-image: url('/images/cover-image-light.png');
-  --title_decor-color: var(--text-color);
-  --content_title-color: var(--text-color);
-  --accent-color_hover-theme-button: rgba(50, 49, 45, 0.4);
-  --theme-button-color: var(--text-color);
+  --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --header-title-color: #db00ff;
+  --accent-color: #ff0070;
+  --accent-color-rec: var(--accent-color);
+  --bg-image: url('../images/cover-image-dark.png');
+  --title-decor-color: var(--bg-color);
+  --content-title-color: var(--accent-color);
+  --accent-color-hover-theme-button: rgba(255, 0, 112, 0.4);
+  --theme-button-color: var(--accent-color);
   --decor-color: var(--theme-button-color);
 
   --font: 'IBM Plex Mono';
-  --font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --content-padding: 10px;
 }
